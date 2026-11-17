@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog World | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Blog<span>World.</span></a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeBtn" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="tag">WELCOME TO BLOG WORLD</span>
+
+            <h1>Ideas That Inspire.<br>
+                Stories That <span>Connect.</span>
+            </h1>
+
+            <p>
+                Discover fresh ideas, explore interesting stories,
+                and learn something new every day.
+            </p>
+
+            <a href="#articles" class="main-btn">Explore Articles →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900"
+                 alt="Creative writing workspace">
+        </div>
+    </header>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Explore Categories</h2>
+        <p>Find stories that match your interests.</p>
+
+        <div class="category-list">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="technology">Technology</button>
+            <button class="category-btn" data-category="education">Education</button>
+            <button class="category-btn" data-category="lifestyle">Lifestyle</button>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles" id="articles">
+        <div class="section-heading">
+            <div>
+                <span class="tag">OUR BLOG</span>
+                <h2>Latest Articles</h2>
+            </div>
+
+            <input type="search" id="searchInput"
+                   placeholder="Search articles...">
+        </div>
+
+        <div class="article-grid">
+
+            <article class="article-card" data-category="technology">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700"
+                     alt="Technology and teamwork">
+
+                <div class="article-content">
+                    <span class="article-tag">Technology</span>
+                    <h3>The Future of Technology</h3>
+                    <p>Discover how modern technology is changing our everyday lives.</p>
+                    <a href="about.html">Read More →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="education">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700"
+                     alt="Books and education">
+
+                <div class="article-content">
+                    <span class="article-tag">Education</span>
+                    <h3>Learning Never Stops</h3>
+                    <p>Explore the importance of continuous learning and knowledge.</p>
+                    <a href="about.html">Read More →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="lifestyle">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=700"
+                     alt="Beautiful workspace">
+
+                <div class="article-content">
+                    <span class="article-tag">Lifestyle</span>
+                    <h3>Build a Better Daily Routine</h3>
+                    <p>Small habits can make a big difference in your daily life.</p>
+                    <a href="about.html">Read More →</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No articles found. Try another search.
+        </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Stay Inspired!</h2>
+        <p>Explore new ideas and never stop learning.</p>
+        <a href="contact.html" class="main-btn">Get In Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Blog<span>World.</span></h2>
+        <p>Created by: Your Team Members</p>
+        <p>Email: blogworld@example.com</p>
+        <p>© 2026 Blog World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
